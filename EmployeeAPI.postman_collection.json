@@ -1,0 +1,293 @@
+{
+	"info": {
+		"_postman_id": "4107b46d-6799-4d0c-aa72-94d99df342d2",
+		"name": "EmployeeAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22616498"
+	},
+	"item": [
+		{
+			"name": "GetAllDepartment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:53535/api/Department/GetAllDepartment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "53535",
+					"path": [
+						"api",
+						"Department",
+						"GetAllDepartment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"EmployeeName\":\"Bala\",\r\n    \"Department\":\"Banking\",\r\n    \"DateOfJoining\":\"12-01-2021\",\r\n    \"PhotoFileName\":\"image1.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:53535/api/Employee/AddEmployee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "53535",
+					"path": [
+						"api",
+						"Employee",
+						"AddEmployee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Employee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"EmployeeId\":1,\r\n    \"EmployeeName\":\"Arun\",\r\n    \"Department\":\"HR\",\r\n    \"DateOfJoining\":\"13-01-2021\",\r\n    \"PhotoFileName\":\"image2.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:53535/api/Employee/UpdateEmployee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "53535",
+					"path": [
+						"api",
+						"Employee",
+						"UpdateEmployee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Department",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"DepartmentId\":1,\r\n    \"DepartmentName\":\"HR1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:53535/api/Department/Updatedepartment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "53535",
+					"path": [
+						"api",
+						"Department",
+						"Updatedepartment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Department",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"DepartmentName\":\"Banking\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:53535/api/Department/AddDepartment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "53535",
+					"path": [
+						"api",
+						"Department",
+						"AddDepartment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllEmployee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:53535/api/Employee/GetAllEmployee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "53535",
+					"path": [
+						"api",
+						"Employee",
+						"GetAllEmployee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllDepartment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:53535/api/Department/GetAllDepartment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "53535",
+					"path": [
+						"api",
+						"Department",
+						"GetAllDepartment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetEmployeeById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:53535/api/Employee/GetEmployeeById/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "53535",
+					"path": [
+						"api",
+						"Employee",
+						"GetEmployeeById",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetDepartmentById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:53535/api/Department/GetDepartmentById/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "53535",
+					"path": [
+						"api",
+						"Department",
+						"GetDepartmentById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteEmployee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:53535/api/Employee/DeleteEmployee/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "53535",
+					"path": [
+						"api",
+						"Employee",
+						"DeleteEmployee",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteDepartment",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:53535/api/Department/DeleteDepartment/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "53535",
+					"path": [
+						"api",
+						"Department",
+						"DeleteDepartment",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

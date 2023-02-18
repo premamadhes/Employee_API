@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\prema\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\prema\\.nuget\\packages"
+    ]
+  }
+}
